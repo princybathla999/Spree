@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170320200775) do
+ActiveRecord::Schema.define(version: 20170321174907) do
 
   create_table "friendly_id_slugs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "slug",                      null: false
@@ -361,6 +361,16 @@ ActiveRecord::Schema.define(version: 20170320200775) do
     t.index ["option_type_id"], name: "index_spree_product_option_types_on_option_type_id", using: :btree
     t.index ["position"], name: "index_spree_product_option_types_on_position", using: :btree
     t.index ["product_id"], name: "index_spree_product_option_types_on_product_id", using: :btree
+  end
+
+  create_table "spree_product_packages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "product_id",             null: false
+    t.integer  "length",     default: 0, null: false
+    t.integer  "width",      default: 0, null: false
+    t.integer  "height",     default: 0, null: false
+    t.integer  "weight",     default: 0, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "spree_product_promotion_rules", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
