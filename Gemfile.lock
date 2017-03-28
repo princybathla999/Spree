@@ -75,6 +75,8 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    braintree (2.72.0)
+      builder (>= 2.0.0)
     builder (3.2.3)
     byebug (9.0.6)
     camertron-eprun (1.1.1)
@@ -344,6 +346,8 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  activemerchant
+  braintree (~> 2.61, >= 2.61.1)
   byebug
   coffee-rails (~> 4.2)
   execjs
