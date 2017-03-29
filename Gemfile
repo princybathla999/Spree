@@ -33,6 +33,7 @@ gem 'spree', '~> 3.2.0'
 gem 'spree_auth_devise', '~> 3.2.0.beta'
 gem 'spree_gateway', '~> 3.2.0.beta'
 gem 'spree_active_shipping', github: 'spree-contrib/spree_active_shipping'
+gem 'paypal-sdk-rest'
 gem 'activemerchant'
 gem 'braintree', '~> 2.61', '>= 2.61.1'
 #-----------------------------------------------
