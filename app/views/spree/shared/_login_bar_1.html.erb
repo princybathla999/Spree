@@ -1,0 +1,6 @@
+<% if spree_current_user %>
+    <%= link_to Spree.t(:my_account), spree.account_path %>
+    <%= link_to Spree.t(:logout), spree.logout_path %>
+<% else %>
+    <%= link_to Spree.t(:login), spree.login_path %>
+<% end %>
