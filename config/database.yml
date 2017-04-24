@@ -19,14 +19,22 @@ default: &default
 
 development:
   <<: *default
+<<<<<<< HEAD
   database: bathla_development
+=======
+  database: herokuTest_development
+>>>>>>> 5f2c265a0a60c68c62402d503865b7c60a8485f2
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+<<<<<<< HEAD
   database: bathla_test
+=======
+  database: herokuTest_test
+>>>>>>> 5f2c265a0a60c68c62402d503865b7c60a8485f2
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,6 +57,12 @@ test:
 #
 production:
   <<: *default
+<<<<<<< HEAD
   database: bathla_production
   username: bathla
   password: <%= ENV['BATHLA_DATABASE_PASSWORD'] %>
+=======
+  database: herokuTest_production
+  username: herokuTest
+  password: <%= ENV['HEROKUTEST_DATABASE_PASSWORD'] %>
+>>>>>>> 5f2c265a0a60c68c62402d503865b7c60a8485f2
