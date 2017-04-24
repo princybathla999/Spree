@@ -6,6 +6,21 @@ GIT
       active_shipping (~> 1.4)
       spree_core (>= 3.1.0, < 4.0)
 
+GIT
+  remote: https://github.com/spree-contrib/spree_multi_currency.git
+  revision: ee85eec0c140fbc212fc0f4bb540bbc05962b91a
+  specs:
+    spree_multi_currency (3.2.0.alpha)
+      spree_backend (>= 3.1.0, < 4.0)
+
+GIT
+  remote: https://github.com/spree-contrib/spree_slider.git
+  revision: 014e6330dd288231a12e1b9d0da3ecf0f4c6c990
+  specs:
+    spree_slider (3.2.0.alpha)
+      spree_backend (>= 3.1.0, < 4.0)
+      spree_core (>= 3.1.0, < 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -366,6 +381,8 @@ DEPENDENCIES
   spree_active_shipping!
   spree_auth_devise (~> 3.2.0.beta)
   spree_gateway (~> 3.2.0.beta)
+  spree_multi_currency!
+  spree_slider!
   therubyracer
   turbolinks (~> 5)
   tzinfo-data

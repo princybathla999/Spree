@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170321174907) do
+ActiveRecord::Schema.define(version: 20170331021627) do
 
   create_table "friendly_id_slugs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "slug",                      null: false
@@ -710,6 +710,34 @@ ActiveRecord::Schema.define(version: 20170321174907) do
     t.string   "payment_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "spree_slide_locations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_slide_slide_locations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "slide_id"
+    t.integer "slide_location_id"
+    t.index ["slide_id"], name: "index_spree_slide_slide_locations_on_slide_id", using: :btree
+    t.index ["slide_location_id"], name: "index_spree_slide_slide_locations_on_slide_location_id", using: :btree
+  end
+
+  create_table "spree_slides", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.text     "body",               limit: 65535
+    t.string   "link_url"
+    t.boolean  "published"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "position",                         default: 0, null: false
+    t.integer  "product_id"
   end
 
   create_table "spree_state_changes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

@@ -36,6 +36,7 @@ gem 'spree_active_shipping', github: 'spree-contrib/spree_active_shipping'
 gem 'paypal-sdk-rest'
 gem 'activemerchant'
 gem 'braintree', '~> 2.61', '>= 2.61.1'
+gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
 #-----------------------------------------------
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -57,3 +58,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'spree_slider', github: 'spree-contrib/spree_slider'
