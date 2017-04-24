@@ -8,18 +8,12 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
-# Use mysql as the database for Active Record
-<<<<<<< HEAD
-gem 'mysql2', '>= 0.3.18', '< 0.5'
+
+
 gem "execjs"
-=======
 group :production do
   gem 'pg'
 end
-group :development do
-gem 'mysql2', '>= 0.3.18', '< 0.5'
-end
->>>>>>> 5f2c265a0a60c68c62402d503865b7c60a8485f2
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -29,11 +23,8 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-<<<<<<< HEAD
-gem 'therubyracer', platforms: :ruby
-=======
+#gem 'therubyracer', platforms: :ruby
 # gem 'therubyracer', platforms: :ruby
->>>>>>> 5f2c265a0a60c68c62402d503865b7c60a8485f2
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -41,7 +32,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-<<<<<<< HEAD
+
 #-----------------------------------------------
 gem 'spree', '~> 3.2.0'
 gem 'spree_auth_devise', '~> 3.2.0.beta'
@@ -51,9 +42,6 @@ gem 'paypal-sdk-rest'
 gem 'activemerchant'
 gem 'braintree', '~> 2.61', '>= 2.61.1'
 gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
-#-----------------------------------------------
-=======
->>>>>>> 5f2c265a0a60c68c62402d503865b7c60a8485f2
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -64,6 +52,7 @@ gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'mysql2', '>= 0.3.18', '< 0.5'
   gem 'byebug', platform: :mri
 end
 
@@ -74,7 +63,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-<<<<<<< HEAD
 gem 'spree_slider', github: 'spree-contrib/spree_slider'
-=======
->>>>>>> 5f2c265a0a60c68c62402d503865b7c60a8485f2
