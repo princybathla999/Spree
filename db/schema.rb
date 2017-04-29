@@ -10,7 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170331021627) do
 
   create_table "friendly_id_slugs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -1071,16 +1070,6 @@ ActiveRecord::Schema.define(version: 20170331021627) do
     t.string   "kind"
     t.index ["default_tax"], name: "index_spree_zones_on_default_tax", using: :btree
     t.index ["kind"], name: "index_spree_zones_on_kind", using: :btree
-=======
-ActiveRecord::Schema.define(version: 20170331212934) do
-
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "project_name"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
->>>>>>> 5f2c265a0a60c68c62402d503865b7c60a8485f2
   end
 
 end
